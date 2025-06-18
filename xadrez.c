@@ -1,33 +1,52 @@
 #include <stdio.h>
 
 int main() {
-    // -------------------- TORRE --------------------
-    // A torre anda 5 casas para a direita (horizontal)
-    printf("Movimento da TORRE:\n");
-    for (int i = 1; i <= 5; i++) {
+    // Torre - 5 casas para a direita (for)
+    int i;
+    printf("Movimento da Torre:\n");
+    for(i = 1; i <= 5; i++) {
         printf("Direita\n");
     }
 
-    // -------------------- BISPO --------------------
-    // O bispo anda 5 casas na diagonal para cima e direita
-    printf("\nMovimento do BISPO:\n");
-    int passosBispo = 1;
-    while (passosBispo <= 5) {
+    printf("\n");
+
+    // Bispo - 5 casas na diagonal para cima e à direita (while)
+    int j = 1;
+    printf("Movimento do Bispo:\n");
+    while(j <= 5) {
         printf("Cima Direita\n");
-        passosBispo++;
+        j++;
     }
 
-    // -------------------- RAINHA --------------------
-    // A rainha anda 8 casas para a esquerda
-    printf("\nMovimento da RAINHA:\n");
-    int passosRainha = 1;
+    printf("\n");
+
+    // Rainha - 8 casas para a esquerda (do-while)
+    int k = 1;
+    printf("Movimento da Rainha:\n");
     do {
         printf("Esquerda\n");
-        passosRainha++;
-    } while (passosRainha <= 8);
+        k++;
+    } while(k <= 8);
+
+    printf("\n");
+
+    // Cavalo - 2 casas para baixo e 1 para a esquerda (for + while)
+    int passo;
+    printf("Movimento do Cavalo:\n");
+
+    for(passo = 1; passo <= 2; passo++) {
+        printf("Baixo\n");
+    }
+
+    int mov = 1;
+    while(mov <= 1) {
+        printf("Esquerda\n");
+        mov++;
+    }
 
     return 0;
 }
+
 
 
     // Implementação de Movimentação do Bispo
